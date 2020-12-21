@@ -40,8 +40,8 @@ export default function Nav() {
 				<ScrollLink offset={-117} to="contact" smooth={true}>
 					<span className="nav-link">CONTACT</span>
 				</ScrollLink>
-				<ScrollLink to="landing" smooth={true}>
-					<span className="nav-link">Sign up</span>
+				<ScrollLink to="download" offset={-117} smooth={true}>
+					<span className="nav-link">app</span>
 				</ScrollLink>
 			</div>
 			<div className="nav-right">

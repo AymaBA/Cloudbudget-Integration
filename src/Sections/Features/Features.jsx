@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Features.css'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Features() {
+	useEffect(() => {
+		Aos.init({ duration: 1000 });
+	},[])
 	return (
-		<div className="body-features" id="features">
+		<div data-aos="fade-up" className="body-features" id="features">
 			<h1 className="title-feature">Features</h1>
-			<div className="card-group">
-				<div className="card">
+			<div data-aos="fade-up" data-aos-delay="100" className="card-group">
+				<div data-aos-delay="70" className="card">
 					<img src="assets/card/money.png"/>
 					<div className="card-content">
 						<h1>Supports All Currencies and  Cards</h1>

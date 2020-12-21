@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Download.css'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Download() {
+	useEffect(() => {
+		Aos.init({ duration: 1000 });
+	},[])
 	return (
 		<div className="download-body" id="download">
 			<div className="texte-download">
-				<h1>Stay focused on saving money</h1>
-				<p>It is important to stay focused on saving money in any way you can. We help you monitor your spending habits so you can easily spot and cut any unnecessary expenses. Simply join today to get started!</p>
-				<div className="icon-group">
+				<h1 data-aos="fade-up" >Stay focused on saving money</h1>
+				<p data-aos="fade-up" data-aos-delay="100">It is important to stay focused on saving money in any way you can. We help you monitor your spending habits so you can easily spot and cut any unnecessary expenses. Simply join today to get started!</p>
+				<div data-aos="fade-up" className="icon-group">
 					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M3 3.71803V28.2805C3.00016 28.3338 3.01606 28.3859 3.04569 28.4302C3.07532 28.4745 3.11737 28.509 3.16656 28.5295C3.21575 28.55 3.2699 28.5555 3.32222 28.5454C3.37453 28.5352 3.42268 28.5098 3.46062 28.4724L16.25 15.9999L3.46062 3.52616C3.42268 3.48874 3.37453 3.46336 3.32222 3.45321C3.2699 3.44305 3.21575 3.44856 3.16656 3.46905C3.11737 3.48954 3.07532 3.5241 3.04569 3.56839C3.01606 3.61269 3.00016 3.66474 3 3.71803Z" fill="white" />
 						<path d="M21.6125 10.8749L5.57627 2.03994L5.56627 2.03432C5.29002 1.88432 5.02752 2.25807 5.25377 2.47557L17.8244 14.4956L21.6125 10.8749Z" fill="white" />
@@ -22,10 +27,10 @@ export default function Download() {
 					</svg>
 				</div>
 			</div>
-			<div className="img-group">
+			<div data-aos="zoom-in" className="img-group">
 					<img className="back1" src="assets/download/back1.png" />
 					<img className="back2" src="assets/download/back2.png" />
-					<img className="front" src="assets/download/front.png" />
+					<img className="front" data-aos="zoom-out" src="assets/download/front.png" />
 				</div>
 		</div>
 	)

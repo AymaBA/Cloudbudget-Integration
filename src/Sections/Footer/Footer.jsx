@@ -1,18 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Footer.css'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Footer() {
+	useEffect(() => {
+		Aos.init({ duration: 1000 });
+	},[])
 	return (
 		<div className="footer-body">
 			<div className="line1">
-				<div className="address">
-					<h1>Address</h1>
-					<p>Pipang Ltd, Griva Digeni,<br />
+				<div  className="address">
+					<h1 data-aos="fade-right">Address</h1>
+					<p data-aos="fade-right" data-aos-delay="100" >Pipang Ltd, Griva Digeni,<br />
 					81-83 Jacovides Tower, 1st Floor<br />
 1090 Picosia USA</p>
 				</div>
-				<div className="services">
-					<h1>Services</h1>
+				<div  data-aos="fade-right" className="services">
+					<h1 data-aos="fade-right" data-aos-delay="100">Services</h1>
 					<p>Overview<br />
 					Features<br />
 					Technology<br />
@@ -21,12 +26,12 @@ export default function Footer() {
 					</p>
 				</div>
 				<div className="getintouch">
-					<h1>Get in Touch</h1>
-					<div className="footer-contact">
+					<h1 data-aos="fade-right" >Get in Touch</h1>
+					<div data-aos="fade-right" data-aos-delay="100" className="footer-contact">
 						<a href="mailto:info@cloudbudget.com">info@cloudbudget.com</a><br/>
 						<a href="tel:+1 844-721-7120">+1 844-721-7120</a>
 					</div>
-					<div className="logo-group">
+					<div data-aos="fade-up" data-aos-delay="150" className="logo-group">
 						<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M13.4167 1.75001C12.8581 2.14403 12.2396 2.4454 11.585 2.64251C11.2337 2.23855 10.7668 1.95224 10.2474 1.8223C9.7281 1.69235 9.18137 1.72504 8.68122 1.91594C8.18106 2.10684 7.75159 2.44674 7.45091 2.88967C7.15022 3.33261 6.99283 3.8572 7 4.39251V4.97584C5.97487 5.00242 4.95908 4.77506 4.04309 4.31402C3.1271 3.85297 2.33935 3.17254 1.75 2.33334C1.75 2.33334 -0.583331 7.58334 4.66667 9.91667C3.46531 10.7322 2.03418 11.141 0.583336 11.0833C5.83333 14 12.25 11.0833 12.25 4.37501C12.2495 4.21252 12.2338 4.05044 12.2033 3.89084C12.7987 3.30371 13.2188 2.56242 13.4167 1.75001Z" fill="#101010" />
 						</svg>
@@ -40,8 +45,8 @@ export default function Footer() {
 					</div>
 				</div>
 				<div className="services">
-					<h1>We Support</h1>
-					<img src="assets/secure-p-1 1.png" />
+					<h1 data-aos="fade-right" >We Support</h1>
+					<img data-aos="fade-right" data-aos-delay="100" src="assets/secure-p-1 1.png" />
 				</div>
 			</div>
 			<div className="line2">
