@@ -1,0 +1,63 @@
+.technology-body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.technology-title{
+	margin-top:63px;
+}
+
+.item-group{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top:100px;
+	margin-bottom:150px;
+}
+
+.logo-item{
+	align-items: center;
+	display: flex;
+	margin-left: 19%;
+}
+.logo-item h1{
+	font-size: 100px;
+	line-height: 120px;
+	font-weight: bold;
+	color: rgba(16, 16, 16, 0.08);
+	text-align: center;
+}
+
+.item{
+	width: 15%;
+	align-items: center;
+}
+
+.logo-item svg{
+	position: relative;
+	top:40px;
+	transform: scale(3);
+	right: 67px;
+}
+
+.o1 , .o2{
+	position: relative;
+	top:40px;
+	transform: scale(6);
+	right: 60px;
+}
+.item-content h1{
+	text-align: center;
+	font-size: 18px;
+	margin-top: 25px;
+}
+
+.item-content p{
+	margin-top: 10px;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+}

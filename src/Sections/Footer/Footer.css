@@ -1,0 +1,67 @@
+.footer-body {
+	background: #FAFAFA;
+}
+
+.line1 {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 85px;
+	padding-bottom: 85px;
+}
+
+.line1 h1 {
+	font-size: 18px;
+	line-height: 22px;
+	text-align: start;
+	color: #101010;
+	margin-bottom: 30px;
+}
+
+.line1 p {
+	font-size: 12px;
+	line-height: 150%;
+	color: #101010;
+}
+
+.getintouch a {
+	line-height: 160%;
+	font-size: 12px;
+	text-decoration: none;
+	color: #101010;
+}
+.getintouch a:hover {
+	line-height: 160%;
+	font-size: 12px;
+	text-decoration: underline;
+	color: #101010;
+}
+
+
+.logo-group {
+	margin-top: 20px;
+}
+
+.logo-group svg {
+	transform: scale(1.5);
+	margin-right: 22px;
+	cursor: pointer;
+}
+
+.line2 {
+	display: flex;
+	padding-left: 8.5%;
+	padding-bottom: 86px;
+	font-size: 12px;
+	line-height: 14px;
+	justify-content: space-between;
+}
+
+.line2 a {
+	margin-right: 8.5%;
+	text-decoration: none;
+}
+
+.line2 a:hover {
+	text-decoration: underline;
+	color: #101010;
+}

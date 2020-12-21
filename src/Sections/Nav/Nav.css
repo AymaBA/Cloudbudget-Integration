@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+.nav {
+	width: 100%;
+	position: fixed;
+	height: 117px;
+	display: flex;
+	justify-content: space-around;
+	z-index: 3;
+	transition: 1s ease-in-out;
+}
+
+.nav-title {
+	cursor: pointer;
+	color: white;
+	text-transform: uppercase;
+	display: flex;
+}
+
+.nav-title h1 {
+	line-height: 117px;
+	font-size: 18px;
+}
+
+.nav-title svg {
+	margin-top: 49px;
+	margin-left: 10px;
+	transform: scale(1);
+}
+
+
+
+.nav-link-group {
+	line-height: 117px;
+	text-transform: uppercase;
+	justify-content: space-around;
+	display: flex;
+	font-size: 14px;
+	width: 30%;
+	color: white;
+	
+}
+
+.nav-link{
+	cursor: pointer;
+	transition: .3s;
+}
+
+
+.nav-link:hover{
+	font-weight: bold;
+	font-size: 16px;
+	transition:.3s;
+}
+
+.nav-right {
+	width: 10%;
+	display: flex;
+	line-height: 100px;
+	justify-content:space-around;
+}
+
+.nav-language{
+	color: white;
+	display: flex;
+	align-items: center;
+	line-height: 117px;
+	width: 50%;
+	justify-content:space-around;
+}
+
+.nav-right button {
+	cursor: pointer;
+	background: transparent;
+	margin-top: 20%;
+	height: 40px;
+	width: 100px;
+	margin-left: 10px;
+	border: 1px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 6px;
+	color: white;
+	outline: none;
+	transition: .3s;
+}
+
+.nav-right button:hover{
+	transition: .3s;
+	background: white;
+	color: #ED4C5C;
+}
