@@ -28,9 +28,7 @@ export default function Download() {
 				</div>
 			</div>
 			<div data-aos="zoom-in" className="img-group">
-					<img className="back1" src="assets/download/back1.png" />
-					<img className="back2" src="assets/download/back2.png" />
-					<img className="front" data-aos="zoom-out" src="assets/download/front.png" />
+					<img className="front" data-aos="zoom-out" src="assets/slider.png" />
 				</div>
 		</div>
 	)

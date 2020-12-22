@@ -21,6 +21,7 @@
 	color: white;
 	text-transform: uppercase;
 	display: flex;
+	z-index: 2;
 }
 
 .nav-title h1 {
@@ -44,41 +45,41 @@
 	font-size: 14px;
 	width: 30%;
 	color: white;
-	
+
 }
 
-.nav-link{
+.nav-link {
 	cursor: pointer;
 	transition: .3s;
 }
 
 
-.nav-link:hover{
+.nav-link:hover {
 	font-weight: bold;
 	font-size: 16px;
-	transition:.3s;
+	transition: .3s;
 }
 
 .nav-right {
 	width: 10%;
 	display: flex;
 	line-height: 100px;
-	justify-content:space-around;
+	justify-content: space-around;
 }
 
-.nav-language{
+.nav-language {
 	color: white;
 	display: flex;
 	align-items: center;
 	line-height: 117px;
 	width: 50%;
-	justify-content:space-around;
+	justify-content: space-around;
 }
 
-.nav-right button {
+.login {
 	cursor: pointer;
 	background: transparent;
-	margin-top: 20%;
+	margin-top: 40px;
 	height: 40px;
 	width: 100px;
 	margin-left: 10px;
@@ -90,8 +91,124 @@
 	transition: .3s;
 }
 
-.nav-right button:hover{
+.login:hover {
 	transition: .3s;
 	background: white;
 	color: #ED4C5C;
+}
+
+.nav i {
+	font-size: 30px;
+	padding: 0;
+	line-height: 117px;
+	color: white;
+	display: none;
+	z-index: 2;
+}
+
+.login-mobile {
+	display: none;
+	cursor: pointer;
+	background: transparent;
+	height: 40px;
+	width: 100px;
+	margin-left: 10px;
+	border: 1px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 6px;
+	color: white;
+	outline: none;
+	transition: .3s;
+}
+
+.login-mobile:hover {
+	transition: .3s;
+	background: white;
+	color: #ED4C5C;
+}
+
+.mobile {
+	display: none;
+}
+
+@media all and (max-width: 1200px) {
+	.nav i {
+		display: block;
+		line-height: 70px;
+		margin-right: 10px;
+	}
+
+	.nav-title h1 {
+		line-height: 70px;
+	}
+
+	.nav-title svg {
+		margin-top: 24px;
+	}
+
+	.nav {
+		height: 70px;
+	}
+
+	.login {
+		display: none;
+	}
+
+	.login-mobile {
+		display: block;
+	}
+
+	.overview {
+		margin-top: 50px;
+	}
+
+	.nav-link-group {
+		padding-top: 20px;
+		display: none;
+		opacity: 1;
+		animation: fadeOut .3s forwards;
+	}
+
+	.nav-link-group-active {
+		color: white;
+		text-transform: uppercase;
+		display: flex;
+		width: 100%;
+		height: 100vh;
+		flex-direction: column;
+		justify-content: space-around;
+		padding-top: 12px;
+		position: absolute;
+		align-items: center;
+		top: 0;
+		bottom: 0;
+		opacity: 0;
+		animation: fadeIn .3s forwards;
+		background-color: rgba(0, 0, 0, 0.596);
+	}
+
+	.nav-link {
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	.login {
+		margin-top: -20px;
+	}
+
+	.nav-right {
+		width: 40%;
+	}
+}
+
+@keyframes fadeIn {
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	100% {
+		opacity: 0;
+	}
 }

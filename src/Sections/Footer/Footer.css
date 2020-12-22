@@ -66,3 +66,20 @@
 	text-decoration: underline;
 	color: #101010;
 }
+
+@media all and (max-width: 1200px) {
+	.line1{
+		justify-content:start;
+		flex-wrap: wrap;
+	}
+
+	.address, .getintouch , .services {
+		margin-right: 40px;
+		margin-left:20px;
+		margin-top:20px;
+	}
+
+	.getintouch{
+
+	}
+}

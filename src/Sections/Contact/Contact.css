@@ -1,6 +1,5 @@
 .contact-body{
 	display: flex;
-	/* align-items: center; */
 }
 
 .contact-text{
@@ -107,4 +106,53 @@
 	outline: none;
 	cursor: pointer;
 	transition: .3s ease-in-out;
+}
+
+@media all and (max-width: 1200px) {
+	.contact-body{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contact-text{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.form-contact {
+		margin-top: 0px;
+		margin-bottom: 117px;
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		padding-right: 0px;
+	}
+
+	.input-group input{
+		width: 100%;
+	}
+	.input-group{
+		justify-content:start;
+		flex-direction: column;
+	}
+
+	.form-contact button {
+		width: 100%;
+	}
+	.form-contact button:hover {
+		width: 100%;
+	}
+
+	.contact-text h1{
+		font-size: 36px;
+		line-height: 43px;
+		margin: 50px 0% 30px 0;
+	}
+	
+	.contact-text p{
+		width: 80%;
+	}
 }

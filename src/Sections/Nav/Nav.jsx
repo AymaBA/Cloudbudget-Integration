@@ -4,6 +4,7 @@ import './Nav.css';
 
 export default function Nav() {
 	const [color, setColor] = useState(false);
+	const [open, setOpen] = useState(false);
 	window.addEventListener("scroll", () => {
 		if (window.scrollY >= document.getElementById("landing").clientHeight) {
 			setColor(true);
@@ -11,7 +12,8 @@ export default function Nav() {
 			setColor(false);
 		}
 	})
-	
+
+
 	let style ={
 		background: color ? "linear-gradient(90deg, rgba(213, 32, 71, 0.5) 0%, rgba(238, 61, 27, 0.8) 100%)" : "rgba(213, 32, 71, 0)",
 		transition: '.3s all'
@@ -27,23 +29,25 @@ export default function Nav() {
 					<path d="M20.605 8.05002C20.605 7.61502 20.75 7.18002 20.75 6.60002C20.75 3.41002 18.14 0.800018 14.95 0.800018C12.63 0.800018 10.745 2.10502 9.73001 3.99002C9.44001 3.84502 8.86001 3.70002 8.42501 3.70002C6.39501 3.70002 4.80001 5.29502 4.80001 7.32502C4.80001 7.61502 4.80001 7.90502 4.94501 8.05002C2.33501 8.48502 0.450012 10.515 0.450012 13.125C0.450012 15.88 2.77001 18.2 5.52501 18.2H20.025C22.78 18.2 25.1 15.88 25.1 13.125C25.1 10.515 23.215 8.34002 20.605 8.05002Z" fill="white" />
 				</svg>
 			</div>
-			<div className="nav-link-group">
+			<div className={`${open ? "nav-link-group-active" : "nav-link-group"}`} style={{transition: '1s all'}}>
 				<ScrollLink offset={-117} to="video" smooth={true}>
-					<span className="nav-link">OVERVIEW</span>
+					<span className="nav-link overview" onClick={()=> setOpen(false)}>OVERVIEW</span>
 				</ScrollLink>
 				<ScrollLink offset={-117} to="features" smooth={true}>
-					<span className="nav-link">FEATURES</span>
+					<span className="nav-link" onClick={()=> setOpen(false)} >FEATURES</span>
 				</ScrollLink>
 				<ScrollLink offset={-117} to="technology" smooth={true}>
-					<span className="nav-link">TECHNOLOGY</span>
-				</ScrollLink>
-				<ScrollLink offset={-117} to="contact" smooth={true}>
-					<span className="nav-link">CONTACT</span>
+					<span className="nav-link" onClick={()=> setOpen(false)}>TECHNOLOGY</span>
 				</ScrollLink>
 				<ScrollLink to="download" offset={-117} smooth={true}>
-					<span className="nav-link">app</span>
+					<span className="nav-link" onClick={()=> setOpen(false)}>app</span>
 				</ScrollLink>
+				<ScrollLink offset={-117} to="contact" smooth={true}>
+					<span className="nav-link" onClick={()=> setOpen(false)}>CONTACT</span>
+				</ScrollLink>
+				<button className="login-mobile">LOGIN</button>
 			</div>
+			
 			<div className="nav-right">
 				<div className="nav-language">
 					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,8 +85,9 @@ export default function Nav() {
 						<path d="M12.7727 0.273438H1.22735C0.881062 0.273438 0.687703 0.639062 0.902156 0.888672L6.67481 7.58242C6.84005 7.77402 7.15821 7.77402 7.3252 7.58242L13.0979 0.888672C13.3123 0.639062 13.119 0.273438 12.7727 0.273438Z" fill="white" />
 					</svg>
 				</div>
-			<button className="login">LOGIN</button>
+				<button className="login">LOGIN</button>
 			</div>
+			<i onClick={() =>{ setOpen(!open); console.log(open) }} className="fas fa-bars hamburger"></i>
 		</div>
 	)
 }

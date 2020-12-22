@@ -47,11 +47,22 @@
 	font-weight: 600;
 	font-size: 14px;
 	color: #ED4C5C;
-	transition: .3s;
+	transition: 0.3s;
 	}
 
 .signup:hover {
-	transition: .3s;
+	transition: 0.3s;
 	background: transparent;
 	color: white;
+}
+
+@media all and (max-width: 1200px) {
+
+	.title {
+		font-size: 30px;
+	}
+
+	.description {
+		font-size: 18px;
+	}
 }

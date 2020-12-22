@@ -1,7 +1,6 @@
 .download-body{
 	background:#ED4C5C;
 	display: flex;
-	
 }
 
 .texte-download{
@@ -48,21 +47,45 @@
 	align-items: center;
 }
 
-.back2{
-	position: relative;
-	right: -100px;
-}
-.back1{
-	position: relative;
-	left: 300px;
-}
 
-.front{
-	position: relative;
-	right: 400px;
 
-}
 .img-group img{
 	user-select: none;
 	max-height: 311px;
+}
+
+@media all and (max-width: 1200px) {
+	.download-body{
+		flex-direction: column;
+	}
+
+	.texte-download{
+		width: 100%;
+	}
+	.img-group img{
+		user-select: none;
+		max-height: 100%;
+	}
+	.img-group{
+		left:0 ;
+		position: relative;
+		width: 100%;
+	}
+
+	 .front{
+		width: 90%;
+	}
+
+	.front{
+		right: 20%;
+		margin-bottom: 20px;
+	}
+
+	.texte-download h1{
+		width: 90%;
+	}
+
+	.texte-download p{
+		width: 90%;
+	}
 }

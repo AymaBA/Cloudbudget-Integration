@@ -10,7 +10,7 @@ export default function Footer() {
 	return (
 		<div className="footer-body">
 			<div className="line1">
-				<div  className="address">
+				<div className="address">
 					<h1 data-aos="fade-right">Address</h1>
 					<p data-aos="fade-right" data-aos-delay="100" >Pipang Ltd, Griva Digeni,<br />
 					81-83 Jacovides Tower, 1st Floor<br />
@@ -51,7 +51,8 @@ export default function Footer() {
 			</div>
 			<div className="line2">
 				<p>Copyright 2018 CloudBudget</p>
-				<a href="https://ayma.tk" target="blank">Coded by Ayman</a>
+				<p></p>
+				<a href="https://ayma.tk" target="blank">Integration by Ayman</a>
 			</div>
 		</div>
 	)

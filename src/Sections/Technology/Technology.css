@@ -39,16 +39,18 @@
 .logo-item svg{
 	position: relative;
 	top:40px;
-	transform: scale(3);
 	right: 67px;
+	transform: scale(3);
 }
 
-.o1 , .o2{
+.logo-item .o1 ,.logo-item .o2{
 	position: relative;
 	top:40px;
-	transform: scale(6);
-	right: 60px;
+	transform: scale(4);
+	right: 70px;
 }
+
+
 .item-content h1{
 	text-align: center;
 	font-size: 18px;
@@ -60,4 +62,40 @@
 	font-size: 12px;
 	line-height: 14px;
 	text-align: center;
+}
+
+@media all and (max-width: 1200px) {
+	.item-group{
+		display: flex;
+		flex-direction: column;
+		margin-top:100px;
+		margin-bottom:150px;
+	}
+	.item{
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.logo-item{
+		text-align: center;
+		margin-left:30%;
+	}
+	.logo-item .o1 {
+		top:40px;
+		transform: scale(1);
+		right: 100px;
+	}
+
+	.logo-item .o2 {
+		top:40px;
+		transform: scale(1.1);
+		right: 91px;
+	}
+
+	.logo-item svg {
+		top:40px;
+		transform: scale(1.2);
+		right: 79px;
+	}
 }
