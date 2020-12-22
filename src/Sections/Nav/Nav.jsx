@@ -31,7 +31,7 @@ export default function Nav() {
 			</div>
 			<div className={`${open ? "nav-link-group-active" : "nav-link-group"}`} style={{transition: '1s all'}}>
 				<ScrollLink offset={-117} to="video" smooth={true}>
-					<span className="nav-link overview" onClick={()=> setOpen(false)}>OVERVIEW</span>
+					<span className="nav-link" onClick={()=> setOpen(false)}>OVERVIEW</span>
 				</ScrollLink>
 				<ScrollLink offset={-117} to="features" smooth={true}>
 					<span className="nav-link" onClick={()=> setOpen(false)} >FEATURES</span>
